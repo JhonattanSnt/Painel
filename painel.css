@@ -24,6 +24,7 @@ body{
     background-size: cover;
     background-position: center;
     transition: all 400ms;
+    border-radius: 10px;
 }
 .card:nth-child(1){
     background-image: url('imagens/Deadpool1.jfif');
