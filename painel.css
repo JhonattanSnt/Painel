@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8d8d8d;
+}
+.container{
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.25rem;
+}
+.card{
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 400ms;
+}
+.card:nth-child(1){
+    background-image: url('imagens/Deadpool1.jfif');
+}
+.card:nth-child(2){
+    background-image: url('imagens/deadpool2.jpg');
+}
+.card:nth-child(3){
+    background-image: url('imagens/deadpool3.jpg');
+}
+.card:nth-child(4){
+    background-image: url('imagens/deadpool4.jpg');
+}
+.card:nth-child(5){
+    background-image: url('imagens/deadpool5.jpg');
+}
+.card:nth-child(even){
+    transform: translateY(40px);
+}
+.container>.card:not(:hover){
+    filter: grayscale(90%);
+}
+.container>.card:hover{
+    flex: 3;
+    cursor: pointer;
+    box-shadow: 0 0 20px #fff;
+}
